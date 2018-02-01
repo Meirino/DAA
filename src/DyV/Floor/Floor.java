@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class Floor<T> {
 
-    Comparator<T> comp;
+    private Comparator<T> comp;
 
     public Floor(Comparator<T> comp) {
         this.comp = comp;
