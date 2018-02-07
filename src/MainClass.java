@@ -1,4 +1,5 @@
 import DyV.BusqBinaria.BusquedaBin;
+import DyV.Coincidencia.Coincidencia;
 import DyV.Floor.Floor;
 import DyV.Ocurrencias.Ocurrences;
 
@@ -16,7 +17,7 @@ public class MainClass {
         Estudiante est6 = new Estudiante("Laura", 19, 165);
 
         Integer[] arrayInt = {1, 2, 3, 5, 9, 12, 12, 12, 20, 22, 24, 25, 26, 29, 30};
-        int[] arrayInt2 = {1, 2, 3, 5, 9, 12, 12, 12, 20, 22, 24, 25, 26, 29, 30};
+        int[] arrayInt2 = {1, 2, 3, 3, 9, 12, 12, 12, 20, 22, 24, 25, 26, 29, 30};
         Estudiante[] arrayEst = {est1, est2, est3, est4, est5, est6};
 
         Comparator<Integer> comp1 = Comparator.naturalOrder();
@@ -28,5 +29,7 @@ public class MainClass {
         System.out.println(f.floor(arrayInt, 4));
 
         System.out.println(new Ocurrences(comp1).Ocurrencias(arrayInt, 12));
+
+        System.out.println(new Coincidencia().CoincidenciaMetodo(arrayInt2));
     }
 }
